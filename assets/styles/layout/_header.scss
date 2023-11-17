@@ -1,0 +1,43 @@
+header {
+    min-height: 100vh;
+    background: url("/assets/img/img-3.jpg") fixed center/cover;
+}
+.headerContent {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .titres {
+        text-align: center;
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+        p {
+            font-size: 2rem;
+            letter-spacing: 3px;
+            span {
+                background: black;
+                border-radius: 3px;
+                padding: 0 5px;
+                color: red;
+            }
+        }
+        button {
+            margin: 8rem 0 0;
+            background: white;
+            color: black;
+            padding: 15px 25px;
+            border-radius: 2px;
+            border: 2px solid black;
+
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+    }
+}
