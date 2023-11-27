@@ -1,0 +1,105 @@
+footer {
+    background-color: rgb(21,21,21);
+    color: white;
+
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 4rem 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+
+        .footer-infos {
+            .info {
+                p {
+                    font-size: 1.1rem;
+                    padding: 0 0 1.5rem 0;
+                }
+            }
+            .social-links {
+                a i {
+                    font-size: 1.5rem;
+                    margin-right: 0.8rem;
+                    padding: 1rem;
+                    background: rgb(34, 32, 32);
+                }
+            }
+        }
+        .link-nav {
+
+            @media screen and (max-width: 800px) {
+                margin-top: 2rem;
+            }
+            h4 {
+                padding-bottom: 1.5rem;
+            }
+            .link {
+                display: flex;
+                p {
+                    font-size: 1.2rem;
+                    padding: 0 0 1.5rem 0;
+                    margin-top: 5px;
+                }
+                i {
+                    background: red;
+                    color: white;
+                    width: 10px;
+                    height: 10px;
+                    padding: 1rem;
+                    margin-right: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        .services {
+
+            @media screen and (max-width: 800px) {
+                margin-top: 2rem;
+            }
+            h4 {
+                padding-bottom: 1.5rem;
+            }
+            .service {
+                display: flex;
+                
+                p {
+                    font-size: 1.2rem;
+                    padding: 0 0 1.5rem 0;
+                    margin-top: 5px;
+                }
+                i {
+                    background: red;
+                    color: white;
+                    width: 10px;
+                    height: 10px;
+                    padding: 1rem;
+                    margin-right: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .footer-copyright-m {
+        font-size: 1.2rem;
+        display: block;
+        padding: 1rem;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: red;
+        }
+    }
+}

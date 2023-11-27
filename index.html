@@ -18,93 +18,288 @@
 
     <!-- Ma feuille de style -->
     <link rel="stylesheet" href="./assets/styles/index.css">
+
 </head>
 
-<body>
+<body id="accueil">
     <header>
         <div class="navbar">
             <nav>
+                <i class="fa-solid fa-bars"></i>
                 <div class="navTitre">
                     <img src="/assets/img/apple-icon.png" alt="logo-Blackbox">
-                    <h2>BlackBox</h2>
+                    <h2><a href="#accueil">BlackBox</a></h2>
                 </div>
                 <ul class="menu">
-                    <li><a href="#accueil">accueil</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a class="nav-a" href="#accueil">accueil</a></li>
+                    <li><a class="nav-a" href="#propos">à propos</a></li>
+                    <li><a class="nav-a" href="#services">services</a></li>
+                    <li><a class="nav-a" href="#contact">contact</a></li>
                 </ul>
                 <div class="social">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" type="button" class="traduction">ENG</a>
                 </div>
             </nav>
         </div>
-        <div class="headerContent">
-            <div class="titres">
-                <h1>BlackBox</h1>
-                <p>L'Innovation au <span>Service de la Protection</span></p>
-                <button class="btn">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+        <div class="header-dark">
+            <div class="headerContent">
+                <div class="titres">
+                    <h1>BlackBox</h1>
+                    <p class="header-text">L'Innovation au <span>Service de la Protection</span></p>
+                    <div class="services">
+                        <div class="items">
+                            <i class="fa-solid fa-shield-halved"><p class="itemsT1">Sécurité</p></i>
+                        </div>
+                        <div class="items">
+                            <i class="fa-solid fa-location-dot"><p class="itemsT2">Traçage</p></i>
+                        </div>
+                        <div class="items">
+                            <i class="fa-solid fa-suitcase-medical"><p class="itemsT3">Assistance</p></i>
+                        </div>
+                        <div class="items">
+                            <i class="fa-solid fa-users"><p class="itemsT4">Conseils</p></i>
+                        </div>
+                    </div>
+                    <button class="btnContact contactB1" id="btnHeader">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-
         <!-- Section-1 -->
-        <div class="section1" id="">
+        <div class="section1" id="propos">
             <div class="content">
-                <div class="text">
-                    <h3>La sécurité automobile est notre priorité.</h3>
-                    <p>Pionniers de l'Innovation en Sécurité Automobile Chez BlackBox, nous sommes fiers d'être à la pointe de l'innovation en matière de sécurité automobile. Notre aventure a commencé avec une motivation simple : offrir aux propriétaires de véhicules la tranquillité d'esprit ultime.</p>
-                    <p>Vous avez besoin d’un service qui vous assure une protection efficace ? Nous sommes là pour vous</p>
-                    <button class="btn">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                <div class="text-propos">
+                    <h2 class="titrePropos">La sécurité automobile est notre priorité.</h2>
+                    <p class="textPropos">Pionniers de l'Innovation en Sécurité Automobile Chez BlackBox, nous sommes fiers d'être à la pointe de l'innovation en matière de sécurité automobile. Notre aventure a commencé avec une motivation simple : offrir aux propriétaires de véhicules la tranquillité d'esprit ultime.</p>                        <p class="textPropos2">Vous avez besoin d’un service qui vous assure une protection efficace ? Nous sommes là pour vous</p>
+                    <button class="btnContact contactB2">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
                 </div>
-                <img src="/assets/img/img-1.avif" alt="">
+                <div class="image-propos">
+                    <img src="/assets/img/img-1.avif" alt="">
+                </div>
             </div>
         </div>
         <!-- Fin Section-1 -->
 
         <div class="parallax">
-            <div class="container">
-                <h3>Choisissez-Nous</h3>
-                <p>Notre engagement envers la sécurité de votre voiture s'exprime à travers des technologies de pointe, vous offrant confiance et tranquillité d'esprit absolue et aussi votre sérénité à chaque trajet.</p>
-                <button class="btn">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+            <div class="content">
+                <div class="text text-parallax1">
+                    <h2 class="titreParallax1">Choisissez-Nous</h2>
+                    <p class="textParallax1">Notre engagement envers la sécurité de votre voiture s'exprime à travers des technologies de pointe, vous offrant confiance et tranquillité d'esprit absolue et aussi votre sérénité à chaque trajet.</p>
+                    <button class="btnContact contactB3">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                </div>
             </div>
         </div>
 
         <!-- Section-2 -->
         <div class="section2" id="services">
-            <div class="content">
-                <h3>Consulter Nos Services</h3>
+            <h2 class="titreS2">C'est que fait BlackBox</h2>
+            <div class="content1 service1">
                 <div class="left">
-                    <h3>Nous nous investissons pleinement dans notre mission</h3>
-                    <img src="" alt="">
-                    <p>Notre engagement envers la sécurité de votre voiture s'exprime à travers des technologies de pointe, vous offrant confiance et tranquillité d'esprit absolue et aussi votre sérénité à chaque trajet.</p>
-                </div>
-                <div class="center">
-                    <h3>Nous nous investissons pleinement dans notre mission</h3>
-                    <img src="" alt="">
-                    <p>Notre engagement envers la sécurité de votre voiture s'exprime à travers des technologies de pointe, vous offrant confiance et tranquillité d'esprit absolue et aussi votre sérénité à chaque trajet.</p>
+                    <h3 class="titreService1">Alertes Proactives</h3>
+                    <img src="/assets/img/img-10.jpg" alt="">
+                    <p class="textService1">BlackBox surveille constamment le fonctionnement et les données des véhicules. Il détecte de manière proactive les situations potentiellement dangereuses ou inhabituelles, et ses alertes signalent tout risque ou comportement suspect, procurant ainsi une tranquillité d'esprit inestimable aux conducteurs.</p>
                 </div>
                 <div class="right">
-                    <h3>Nous nous investissons pleinement dans notre mission</h3>
-                    <p>Notre engagement envers la sécurité de votre voiture s'exprime à travers des technologies de pointe, vous offrant confiance et tranquillité d'esprit absolue et aussi votre sérénité à chaque trajet.</p>
+                    <h3 class="titreService2">Connecté à l'Intelligence Artificielle</h3>
+                    <img src="/assets/img/img-11.jpg" alt="">
+                    <p class="textService2">En cas d'incidents ou d'activités potentiellement dangereuses, des notifications incitent à une réactivité optimale et à l'adoption de comportements plus prudents. BlackBox tire profit de l'intelligence artificielle pour améliorer la sécurité routière.</p>
                 </div>
             </div>
+            <div class="content2 service2">
+                <div class="right">
+                    <h3 class="titreService3">Immobilisation à Distance</h3>
+                    <img src="/assets/img/distance.jpg" alt="">
+                    <p class="textService3">BlackBox vous offre la possibilité d'immobiliser votre véhicule à distance. Grâce à cette fonctionnalité, le processus de récupération est simplifié en collaboration avec les autorités compétentes en cas de vol.</p>
+                </div>
+                <div class="center">
+                    <h3 class="titreService4">Notifications</h3>
+                    <img src="/assets/img/img-9.jpg" alt="">
+                    <p class="textService4">BlackBox vous fait savoir en cas de tentative de remorquage, vibrations, alertes de mouvement, déconnexion de la batterie, mouvements non autorisés.</p>
+                </div>
+                <div class="right">
+                    <h3 class="titreService5">Assistance 24heures/24 et 7jours/7</h3>
+                    <img src="/assets/img/24-services.jpg" alt="">
+                    <p class="textService5">Nous sommes là pour résoudre vos problèmes à tout moment et vous faciliter la vie. Qu'il s'agisse d'une urgence, d'une plainte ou d'une simple question, nous sommes là à votre écoute et prêts à répondre à vos besoins.</p>
+                </div>
+            </div>
+            <div class="content3 service3">
+                <div class="left">
+                    <h3 class="titreService6">Vous aurez l'accès Complet à l'Application</h3>
+                    <img src="/assets/img/app.jpg" alt="">
+                    <p class="textService6">Avec notre application BlackBox, vous pouvez accéder aux alertes préventives de votre véhicule, ainsi qu'au suivi historique et en temps réel, à tout moment et en tout lieu. Appuyez simplement sur un bouton et vous saurez exactement où se trouve votre véhicule en l’espace de quelques secondes.</p>
+                </div>
+                <div class="right">
+                    <h3 class="titreService7">Votre Gardien Privé Disponible 24/7</h3>
+                    <img src="/assets/img/img-4.jpg" alt="">
+                    <p class="textService7">BlackBox est votre fidèle gardien virtuel pour assurer votre sécurité et celle de votre véhicule. Nos technologies embarquées, notre service de support client à l’écoute du client et notre engagement continu envers votre sécurité font de nous le premier choix pour une solution antivol complète et fonctionnelle.</p>
+                </div>
+            </div>
+            <a href="assets/apk/app-publishedBranded-release.apk" download="BlackBox">
+                <button style="display: flex; align-items: center;" class="downloadBtn">Télécharger l'application <i style="font-size: 2rem; margin-left: 7px;" class="fa-brands fa-android"></i></button>
+            </a>
         </div>
         <!-- Fin Section-2 -->
 
+        <div class="parallax2">
+            <div class="content">
+                <div class="text text-para2">
+                    <h2 class="titreParallax2">Pourquoi vous devez nous faire confiance</h2>
+                    <p class="textParallax2"> Forts de plus de 15 années de recherche et de développement sur les routes d'Afrique, nous avons perfectionné nos connaissances pour créer une solution de pointe qui redéfinit la sécurité des véhicules et des motos au quotidien.</p>
+                    <button class="btnContact contactB4">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
         <!-- Section-3 -->
         <div class="section3" id="">
-
+            <div class="content">
+                <div class="top">
+                    <img class="top-img" src="/assets/img/img-6.jpg" alt="">
+                    <div class="text top-text">
+                        <h2 class="titreTop">Réserver Votre BlackBox</h2>
+                        <p class="textTop">BlackBox n'est pas qu'un simple dispositif antivol mais bien plus que cela. D'un design discret et compact, il est quasiment indétectable. BlackBox est un dispositif non invasif qui s'installe en quelques minutes sans laisser de trace. BlackBox est votre garde rapproche, vigilant 24 heures sur 24 et 7 jours sur 7 et qui s'active des que vous quittez votre véhicule. BlackBox est sans faille, et s’engage à protéger ce qui tient une place particulière dans votre vie ; votre moyen de déplacement.</p>
+                        <div class="button">
+                            <button class="btnContact contactB5">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="text bottom-text">
+                        <h2 class="titreBottom">Notre Innovation Garantit Votre Tranquillité d'Esprit</h2>
+                        <p class="textBottom">Nous comprenons parfaitement le sentiment d’inquiétude qui accompagne la mise en danger d'un objet de grande valeur. C'est cette compréhension qui a alimenté notre engagement pour le développement de BlackBox, résultat d'années de recherche et de progrès technologique.</p>
+                        <button class="btnContact">Contactez-nous <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <img class="bottom-img" src="/assets/img/img-5.jpg" alt="">
+                </div>
+            </div>
         </div>
         <!-- Fin Section-3 -->
 
+        <!-- Section-4 -->
+        <div class="section4" id="contact">
+            <div class="content">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15515.713279856021!2d2.064796!3d13.5399886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11da9d3fccc410af%3A0xad3f135706c627d1!2setransSaharienne!5e0!3m2!1sfr!2sne!4v1700272117186!5m2!1sfr!2sne" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact" id="contactForm">
+                    <div class="infos map-info">
+                        <div class="localisation">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="location">Localisation</h4>
+                        </div>
+                        <p class="adress">Niamey-Koira-Kano (NIGER)</p>
+                        <div class="mail">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h4 class="titreMail">Email</h4>
+                        </div>
+                        <p class="textMail">admin@ma-blackbox.com</p>
+                        <div class="tel">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4 class="tPhone">Téléphone</h4>
+                        </div>
+                        <p>(+227) 92598011 <br>
+                            (+234) 8170912769
+                        </p>
+                    </div>
+                    <form action="https://formspree.io/f/moqozlna" method="POST" class="map-form">
+                        <div class="identite">
+                            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                            <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
+                        </div>
+                        <div class="email">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="message">
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <a type="submit" style="display: block; margin: 5px auto !important;">
+                            <button style="height: 40px; display: flex; align-items: center; margin: 0 auto;" class="submit">Soumettre <i style="margin-left: 5px;" class="fa-solid fa-angle-right"></i></button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Section-4 -->
     </main>
-    <footer>
 
+    <footer class="page-footer">
+        <div class="content">
+            <div class="footer-infos">
+                <div class="info">
+                    <h4>BlackBox</h4>
+                    <p>BlackBox NIAMEY - Niger</p>
+                </div>
+                <div class="info">
+                    <h5 class="tPhone">Téléphone :</h5>
+                    <p style="margin-top: 0.5rem;">(+227) 92598011 <br>
+                        (+234) 8170912769
+                    </p>
+                </div>
+                <div class="info">
+                    <h5 class="titreMail">Email :</h5>
+                    <p>admin@ma-blackbox.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="link-nav">
+                <h4 class="lNav">Liens de Navigation</h4>
+                <div>
+                    <div class="link">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="nav-a" href="#accueil">Accueil</a></p>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="nav-a" href="#propos">A propos</a></p>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="nav-a" href="#services">Services</a></p>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="nav-a" href="#contact">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <h4 class="tService">Nos Services</h4>
+                <div>
+                    <div class="service">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="itemsS1">Sécurité Auto-Moto</a></p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="itemsT2">Traçage</a></p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="itemsT3">Assistance</a></li>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p><a class="itemsT4">Conseils</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-m">
+          Made by <a style="margin-left: 5px;" href="http://materializecss.com">@BlackBox</a>
+        </div>
+        
     </footer>
+
+    <script src="langage.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
