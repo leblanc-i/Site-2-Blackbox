@@ -156,6 +156,11 @@ textarea {
   grid-template-columns: 50% 50%;
 }
 
+.remo {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .animLtR {
   -webkit-transform: translateX(-600px);
           transform: translateX(-600px);
@@ -281,9 +286,14 @@ header .header-dark .headerContent .titres h1 {
   text-align: center;
   font-family: comforta1, serif;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   header .header-dark .headerContent .titres h1 {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .header-dark .headerContent .titres h1 {
+    font-size: 2.5rem;
   }
 }
 header .header-dark .headerContent .titres p {
@@ -421,11 +431,13 @@ nav {
     background: rgba(15, 0, 0, 0.875);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
-    width: 80%;
+    width: 60%;
     height: 100vh;
     top: 0;
     left: 0;
     margin-left: -100%;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 .menu li {
@@ -468,6 +480,8 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 1.2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 @media screen and (max-width: 960px) {
   .social {

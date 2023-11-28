@@ -14,19 +14,28 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
 function reloadPage() {
     location.reload();
 };
+
 mobileMenu.addEventListener("click", () => {
     navMenu.classList.toggle("mobile");
     socialLinks.classList.toggle("mobile");
 });
+
+document.querySelectorAll(".remo").forEach(content => {
+  content.addEventListener("click", () => {
+    navMenu.classList.remove("mobile");
+    socialLinks.classList.remove("mobile");
+  });
+});
+
 btnContact.forEach((btn) => {
   btn.addEventListener("click", () => {
     window.location.href = "#contactForm";
   })
 });
-// Fonction pour animer le défilement vers une section
 
 // Ajoutez des écouteurs d'événements aux liens du menu
 document.querySelectorAll('.nav-a').forEach(function(link) {
@@ -37,6 +46,8 @@ document.querySelectorAll('.nav-a').forEach(function(link) {
     scrollToSection(targetSectionId);
   })
 });
+
+// Fonction pour animer le défilement vers une section
 window.addEventListener("load", () => {
     headerH1.classList.add("animLtR");
     headerP.classList.add("animRtL");
