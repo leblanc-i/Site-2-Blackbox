@@ -19,9 +19,20 @@
     <!-- Ma feuille de style -->
     <link rel="stylesheet" href="./assets/styles/index.css">
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Cacher l'animation une fois que la page est chargée
+          var loaderWrapper = document.querySelector('.loader-wrapper');
+          loaderWrapper.style.display = 'none';
+        });
+    </script>
+
 </head>
 
 <body id="accueil">
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
     <header>
         <div class="navbar">
             <nav>
