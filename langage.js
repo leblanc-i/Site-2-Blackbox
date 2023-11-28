@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector(".tService").textContent = "Our services";
     document.querySelector(".itemsS1").textContent = "Security Auto-Moto";
+
+    document.getElementById("nom").placeholder = "Name";
+    document.getElementById("prenom").placeholder = "First name";
   });
 });
-
-document.getElementById("nom").placeholder = "Name";
-document.getElementById("prenom").placeholder = "First name";
